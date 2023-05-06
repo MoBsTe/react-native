@@ -1,15 +1,15 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-const Task = () => {
+const Task = (props) => {
     return (
         <View>
-            <Text>Task</Text>
+            <Text>{props.text}</Text>
         </View>
     )
 }
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
 
 })
 
