@@ -1,12 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Task from './components/Task';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.tasksWrapper}>
         <Text style={styles.sectionTitle}>Tytul taska</Text>
-        <View style={styles.items}></View>
+        <View style={styles.items}>
+          <Task />
+          <Task />
+          <Task />
+          <Task />
+          <Task />
+        </View>
       </View>
     </View>
   );
